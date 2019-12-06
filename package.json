@@ -1,0 +1,20 @@
+{
+  "name": "sass_webpack_starter_pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --config ./webpack.config.pro.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imran-S-heikh/sass_webpack_starter_pack.git"
+  },
+  "author": "imran_sheikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imran-S-heikh/sass_webpack_starter_pack/issues"
+  },
+  "homepage": "https://github.com/Imran-S-heikh/sass_webpack_starter_pack#readme"
+}
