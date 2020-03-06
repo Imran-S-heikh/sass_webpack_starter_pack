@@ -34,7 +34,8 @@ module.exports = {
                 test: /\.(png|jpeg|gif|jpg|svg)$/i,
                 loader: 'file-loader',
                 options: {
-                    name: './img/[name].[ext]',
+                    name: '[path][name].[ext]',
+                    context: path.resolve(__dirname, "src/")
                 },
             },
             {
@@ -65,6 +66,7 @@ module.exports = {
                 use: [{
                     loader: 'html-loader',
                     options: {
+                        interpolate: true,
                         minimize: true,
                         removeComments: true,
                         collapseWhitespace: true
