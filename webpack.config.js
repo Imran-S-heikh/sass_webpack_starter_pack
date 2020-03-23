@@ -67,12 +67,12 @@ module.exports = {
         test: /\.html$/,
         use: [{
           loader: 'html-loader',
-          options: {
-            interpolate: true,
-            minimize: false,
-            removeComments: false,
-            collapseWhitespace: false
-          }
+//           options: {
+//             interpolate: true,
+//             minimize: false,
+//             removeComments: false,
+//             collapseWhitespace: false
+//           }
         }],
       },
     ]
