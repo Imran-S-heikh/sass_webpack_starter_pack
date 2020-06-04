@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?d77e0d202cdd30c8bee07eac6b2af6db?#iefix") format("embedded-opentype"),
+url("./icons.woff2?d77e0d202cdd30c8bee07eac6b2af6db") format("woff2"),
+url("./icons.woff?d77e0d202cdd30c8bee07eac6b2af6db") format("woff"),
+url("./icons.ttf?d77e0d202cdd30c8bee07eac6b2af6db") format("truetype"),
+url("./icons.svg?d77e0d202cdd30c8bee07eac6b2af6db#icons") format("svg");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bag:before {
+    content: "\f101";
+}
+.icon-bars:before {
+    content: "\f102";
+}
+.icon-chevron-down-solid:before {
+    content: "\f103";
+}
+.icon-close:before {
+    content: "\f104";
+}
+.icon-facebook-f-brands:before {
+    content: "\f105";
+}
+.icon-heart-regular:before {
+    content: "\f106";
+}
+.icon-instagram-brands:before {
+    content: "\f107";
+}
+.icon-phone:before {
+    content: "\f108";
+}
+.icon-search:before {
+    content: "\f109";
+}
+.icon-twitter-brands:before {
+    content: "\f10a";
+}
+.icon-user-regular:before {
+    content: "\f10b";
+}
