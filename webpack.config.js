@@ -41,6 +41,14 @@ module.exports = {
         },
       },
       {
+        test: /\.(ttf|svg|eot|woff|woff2)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          context: path.resolve(__dirname, "src/")
+        },
+      },
+      {
         test: /\.(sass|scss|css)$/i,
         use: [
           {
@@ -67,20 +75,26 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-             loader: 'html-loader',
-//           options: {
-//             interpolate: true,
-//             minimize: false,
-//             removeComments: false,
-//             collapseWhitespace: false
-//           }
+            loader: 'html-loader',
+            //           options: {
+            //             interpolate: true,
+            //             minimize: false,
+            //             removeComments: false,
+            //             collapseWhitespace: false
+            //           }
           },
           {
             loader: 'webpack-atomizer-loader',
             options: {
               configPath: path.resolve('./atomizer.config.js'),
               minimize: true,
-          }
+            }
+          },
+          {
+            loader: 'webpack-molecule-loader',
+            options: {
+              path: path.resolve('./molecule.classes.js')
+            }
           }
         ],
       },

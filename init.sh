@@ -4,6 +4,6 @@ touch .gitignore
 echo 'node_modules/' >> .gitignore
 npm init
 sed -i 's/"test.*/"start": "webpack-dev-server","build": "webpack"/g' package.json
-npm install -D babel-loader @babel/core @babel/preset-env webpack-atomizer-loader webpack webpack-cli css-loader html-loader html-webpack-plugin mini-css-extract-plugin webpack-dev-server sass-loader node-sass file-loader autoprefixer postcss-loader
+npm install -D babel-loader @babel/core @babel/preset-env webpack-atomizer-loader webpack-molecule-loader webpack webpack-cli css-loader html-loader html-webpack-plugin mini-css-extract-plugin webpack-dev-server sass-loader node-sass file-loader autoprefixer postcss-loader
 #gnome-terminal -- npm start
 rm init.sh
