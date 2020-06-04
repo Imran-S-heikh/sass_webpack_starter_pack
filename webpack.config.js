@@ -65,15 +65,24 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: [{
-          loader: 'html-loader',
+        use: [
+          {
+             loader: 'html-loader',
 //           options: {
 //             interpolate: true,
 //             minimize: false,
 //             removeComments: false,
 //             collapseWhitespace: false
 //           }
-        }],
+          },
+          {
+            loader: 'webpack-atomizer-loader',
+            options: {
+              configPath: path.resolve('./atomizer.config.js'),
+              minimize: true,
+          }
+          }
+        ],
       },
     ]
   },
