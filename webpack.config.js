@@ -7,7 +7,8 @@ module.exports = {
   entry: './src/script/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: ''
   },
   // exclude: /(node_modules|bower_components)/,
   mode: 'development',
@@ -54,15 +55,15 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: (resourcePath, context) => {
+              //publicPath: (resourcePath, context) => {
                 // publicPath is the relative path of the resource to the context
                 // e.g. for ./css/admin/main.css the publicPath will be ../../
                 // while for ./css/main.css the publicPath will be ../
-                return path.relative(path.dirname(resourcePath), context) + '/';
+               // return path.relative(path.dirname(resourcePath), context) + '/';
               },
               // by default it uses publicPath in webpackOptions.output
 
-              hmr: process.env.NODE_ENV === 'development',
+              //hmr: process.env.NODE_ENV === 'development',
 
             },
           },
