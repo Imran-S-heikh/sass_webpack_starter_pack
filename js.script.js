@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const content = `"start": "webpack-dev-server",
+const content = `"start": "webpack serve",
                 "build": "webpack",
                 "generate_icon": "icon-font-generator ./src/assets/icons/svg/*.svg -o ./src/assets/icons"`;
 
