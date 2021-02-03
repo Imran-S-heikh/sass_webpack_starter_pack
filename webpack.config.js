@@ -60,7 +60,7 @@ module.exports = {
                 // e.g. for ./css/admin/main.css the publicPath will be ../../
                 // while for ./css/main.css the publicPath will be ../
                // return path.relative(path.dirname(resourcePath), context) + '/';
-              },
+              //},
               // by default it uses publicPath in webpackOptions.output
 
               //hmr: process.env.NODE_ENV === 'development',
