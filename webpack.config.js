@@ -91,6 +91,12 @@ module.exports = {
               configPath: path.resolve('./atomizer.config.js'),
               minimize: true,
             }
+          },
+          {
+            loader: 'webpack-html-component-loader',
+            options: {
+              componentPath: path.resolve('./src/components')
+            }
           }
         ],
       },
