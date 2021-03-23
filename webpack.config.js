@@ -90,12 +90,6 @@ module.exports = {
               configPath: path.resolve('./atomizer.config.js'),
               minimize: true,
             }
-          },
-          {
-            loader: 'webpack-molecule-loader',
-            options: {
-              path: path.resolve('./molecule.classes.js')
-            }
           }
         ],
       },
