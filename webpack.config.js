@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
 
 module.exports = {
 
@@ -103,9 +104,12 @@ module.exports = {
       chunkFilename: '[id].css',
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-    })
+     ...fs.readdirSync('./src').filter(item=>item.includes('.html')).map(item=>(
+      new HtmlWebpackPlugin({
+        filename: item,
+        template: `./src/${item}`
+      })
+    ))
   ],
 
 }
